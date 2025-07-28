@@ -33,3 +33,4 @@ a=int(input("Enter a int number 1: "))
 b=int(input("Enter a int number 2: "))
 c=a%b
 print(c)
+#print(int(f))
