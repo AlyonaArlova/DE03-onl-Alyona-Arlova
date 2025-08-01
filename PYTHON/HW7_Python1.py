@@ -44,13 +44,13 @@ while True:
     else:
         # Проверяем число a
         for ch in a:
-            if ch < '0' or ch > '9':
+            if ch == ' ' or ch > '9':
                 this_number = False
                 break
         # Если a прошёл проверку, проверяем b
         if this_number:
             for ch in b:
-                if ch < '0' or ch > '9':
+                if ch == ' ' or ch > '9':
                     this_number = False
                     break
 
@@ -79,7 +79,7 @@ while True:
         th_number = False
     else:
         for ch in a:
-            if ch < '0' or ch > '9':  # если символ ввели
+            if ch == ' ' or ch > '9':  # если символ ввели
                 th_number = False
                 break
 
