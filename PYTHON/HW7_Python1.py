@@ -22,7 +22,7 @@ while True:
             wrong_letter = True
 
     if wrong_letter:
-        print("Введены символы, не соответствующие русским буквам.")
+        print("Введены символы, не соответствующие русским буквам")
     else:
         print(f"Количество гласных: {vowels_count}")
         print(f"Количество согласных: {consonants_count}")
