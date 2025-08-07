@@ -11,10 +11,15 @@ print(f"My name is {name}. I am {age}. Am I student? {is_student}")
 #Напишите программу,
 # которая запрашивает у пользователя три числа, сравнивает их между собой
 # и выводит максимальное и  минимальное число
+# Запрос чисел у пользователя
 a = int(input("Enter number 1: "))
 b = int(input("Enter number 2: "))
 c = int(input("Enter number 3: "))
-max_number = max(a,b,c)
-min_number = min(a,b,c)
-print(max_number)
-print(min_number)
+
+# Вычисление максимума и минимума
+max_number = max(a, b, c)
+min_number = min(a, b, c)
+
+# Вывод результата
+print("Maximum number is:", max_number)
+print("Minimum number is:", min_number)
