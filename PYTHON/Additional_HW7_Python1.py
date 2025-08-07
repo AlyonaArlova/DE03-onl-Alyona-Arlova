@@ -32,7 +32,7 @@ a = 0
 b = 1
 
 for i in range(10):
-    print("Fibonacci number:", a)            #  current number
+    print("Fibonacci number:", a) #  current number
 
     next_number = a + b # calc  next Fibonacci number
     a = b               # move b into a
