@@ -19,7 +19,21 @@ c = int(input("Enter number 3: "))
 # Вычисление максимума и минимума
 max_number = max(a, b, c)
 min_number = min(a, b, c)
+if a >= b and a >= c:
+    max_num = a
+elif b >= a and b >= c:
+    max_num = b
+else:
+    max_num = c
+if a <= b and a <= c:
+    min_num = a
+elif b <= a and b <= c:
+    min_num = b
+else:
+    min_num = c
 
 # Вывод результата
 print("Maximum number is:", max_number)
+print("Maximum number is:", max_num)
 print("Minimum number is:", min_number)
+print("Minimum number is:", min_num)
