@@ -1,0 +1,4 @@
+Alyona 12
+Anna 10
+Max 5
+Ivan 6
