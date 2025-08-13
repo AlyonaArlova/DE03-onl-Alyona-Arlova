@@ -11,7 +11,7 @@ with open(file_path_task2, "a+") as file2:
     file2.seek(0)
     print(file2.read())
 
-#Напишите программу,
+#Напишите программу
 # которая считает количество строк, слов и символов в заданном текстовом файле и выводит результаты.
 file_path_task3 = "/Users/Alyona_Arlova/Desktop/DE03-onl-Alyona-Arlova/PYTHON/Files/FileForHWTask3.txt"
 try:
