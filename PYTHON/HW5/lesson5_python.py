@@ -1,0 +1,32 @@
+file = open(r"PYTHON/HW5/file.txt", "r")
+content =file.read()
+print(content)
+file.close()
+
+file = open(r"PYTHON/HW5/file.txt", "r")
+line = file.readline()
+print(line)
+file.close()
+
+file = open(r"PYTHON/HW5/file.txt", "r")
+lines = file.readlines()
+print(lines)
+file.close()
+
+file = open(r"PYTHON/HW5/file.txt", "r+")
+file.write("Kate 19")
+content = file.read()
+print(content)
+file.close()
+
+file = open(r"PYTHON/HW5/file.txt", "r+")
+file.writelines (["Kate 19\n",  "Julia 23\n"])
+content = file.read()
+print(content)
+file.close()
+
+file = open(r"PYTHON/HW5/file.txt", "a+")
+file.writelines (["Kate 19\n",  "Julia 23\n"])
+content = file.read()
+print(content)
+file.close()

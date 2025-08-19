@@ -1,11 +1,11 @@
 #Откройте файл example.txt и выведите его содержимое на экран
-file_path = "/Users/Alyona_Arlova/Desktop/DE03-onl-Alyona-Arlova/PYTHON/Files/example.txt"
+file_path = r"PYTHON/HW5/example.txt"
 with open(file_path, "r") as file:
     content = file.read()
     print(content)
 
 #Создайте файл output.txt и запишите в него строку "Hello, World!"
-file_path_task2 = "/Users/Alyona_Arlova/Desktop/DE03-onl-Alyona-Arlova/PYTHON/Files/output.txt"
+file_path_task2 = r"PYTHON/HW5/output.txt"
 with open(file_path_task2, "a+") as file2:
     file2.write("\nHello, World!")
     file2.seek(0)
@@ -13,7 +13,7 @@ with open(file_path_task2, "a+") as file2:
 
 #Напишите программу
 # которая считает количество строк, слов и символов в заданном текстовом файле и выводит результаты.
-file_path_task3 = "/Users/Alyona_Arlova/Desktop/DE03-onl-Alyona-Arlova/PYTHON/Files/FileForHWTask3.txt"
+file_path_task3 = r"PYTHON/HW5/FileForHWTask3.txt"
 try:
     with open(file_path_task3,"r+") as file2:
         content = file2.read()

@@ -15,7 +15,7 @@ else:
 
 # 2. Считайте с клавиатуры любое количество чисел до тех пор, пока пользователь не введёт 0.
 # Сохраните все введённые числа в файл numbers.txt.
-filetxt = "/Users/Alyona_Arlova/Desktop/DE03-onl-Alyona-Arlova/PYTHON/Files/filefornumber.txt"
+filetxt = r"PYTHON/HW6/filefornumber.txt"
 try:
     with open(filetxt,'w+') as F:
         while True:
@@ -39,7 +39,7 @@ finally:
 # 3. Считайте с клавиатуры десять чисел, сохраните их в список,
 # отберите только чётные и запишите их в файл even.txt.
 # Затем прочитайте файл и выведите содержимое на экран.
-evenfile = "/Users/Alyona_Arlova/Desktop/DE03-onl-Alyona-Arlova/PYTHON/Files/even.txt"
+evenfile = r"PYTHON/HW6/even.txt"
 
 try:
     with open(evenfile, 'w+') as E:

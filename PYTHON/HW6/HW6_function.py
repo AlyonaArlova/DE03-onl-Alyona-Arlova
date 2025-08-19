@@ -1,4 +1,4 @@
-import ModuleforTask1
+import ModuleforTask1 as ModuleforTask1
 #1.Напишите функцию greet, которая принимает имя в качестве аргумента и выводит строку "Hello, [имя]!".
 
 def greet(name):
