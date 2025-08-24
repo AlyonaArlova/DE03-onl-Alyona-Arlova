@@ -1,0 +1,5 @@
+
+Total price for Phone (2 qty.) is 800
+Total price for Phone (1 qty.) is 400
+Total price for Phone (1 qty.) is 400
+Total price for Phone (1 qty.) is 400
