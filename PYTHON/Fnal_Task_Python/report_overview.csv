@@ -1,0 +1,10 @@
+Return shares (%):
+returned
+False    77.0
+True     23.0
+Name: proportion, dtype: float64
+Number of unique customers: 89
+Median check: 1979.232
+Average check: 2300.647785
+Gross sum: 512724.44
+Netto sum: 379946.6805
