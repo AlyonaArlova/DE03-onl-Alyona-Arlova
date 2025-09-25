@@ -1,0 +1,18 @@
+Top products by quantity sells:product
+Bicycle          68
+Shoes            59
+T-Shirt          51
+Chair            49
+Football         42
+Laptop           42
+Basketball       41
+Tennis Racket    41
+Desk             34
+Jeans            34
+Headphones       33
+Phone            27
+Tablet           27
+Sofa             25
+Jacket           20
+Table            15
+Name: quantity, dtype: int64
