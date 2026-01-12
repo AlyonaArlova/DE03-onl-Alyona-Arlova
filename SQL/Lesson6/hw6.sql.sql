@@ -6,7 +6,7 @@ WHERE film_id IN (
     SELECT fc.film_id
     FROM film_category fc
     JOIN category c ON fc.category_id = c.category_id
-    WHERE c.name = 'Comedy'
+    WHERE lower(c.name) = 'comedy'
 );
 
 
@@ -28,7 +28,7 @@ action_inventory AS (
     FROM inventory i
     JOIN film_category fc ON i.film_id = fc.film_id
     JOIN category c ON fc.category_id = c.category_id
-    WHERE c.name = 'Action'
+    WHERE lower(c.name) = 'action'
     LIMIT 1
 ),
 top_customer AS (

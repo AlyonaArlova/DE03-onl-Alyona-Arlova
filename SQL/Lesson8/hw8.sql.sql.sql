@@ -7,24 +7,24 @@
 --В ней должен быть составной первичный ключ (emp_id, project_id) и два внешних ключа, ссылающихся на employees(emp_id) и projects(project_id).
 --Вставьте корректные данные и попробуйте вставить запись с несуществующим emp_id или project_id.
 
-CREATE TABLE departments (
+CREATE TABLE IF NOT EXISTS departments (
     dept_id SERIAL PRIMARY KEY,
     dept_name VARCHAR(200) NOT NULL
 );
 
-CREATE TABLE employeesa (
+CREATE TABLE IF NOT EXISTS employeesa (
     emp_id SERIAL PRIMARY KEY,
     dept_id INT REFERENCES departments(dept_id),
     full_name VARCHAR(200) NOT NULL
 );
 
-CREATE TABLE projects (
+CREATE TABLE IF NOT EXISTS projects (
     project_id SERIAL PRIMARY KEY,
     dept_id INT REFERENCES departments(dept_id),
     project_name VARCHAR(200) NOT NULL
 );
 
-CREATE TABLE employee_projects (
+CREATE TABLE IF NOT EXISTS employee_projects (
     emp_id INT,
     project_id INT,
     PRIMARY KEY (emp_id, project_id),
@@ -59,12 +59,12 @@ DROP TABLE IF EXISTS employeesa;
 DROP TABLE IF EXISTS departments;
 
 
-CREATE TABLE departments (
+CREATE TABLE IF NOT EXISTS departments (
     dept_id SERIAL PRIMARY KEY,
     dept_name VARCHAR(200)
 );
 
-CREATE TABLE employees (
+CREATE TABLE IF NOT EXISTS employees (
     emp_id SERIAL PRIMARY KEY,
     dept_id INT NOT NULL,
     full_name VARCHAR(200),
@@ -73,7 +73,7 @@ CREATE TABLE employees (
         ON DELETE CASCADE  
 );
 
-CREATE TABLE projects (
+CREATE TABLE IF NOT EXISTS projects (
     project_id SERIAL PRIMARY KEY,
     dept_id INT NOT NULL,
     project_name VARCHAR(200),
@@ -82,7 +82,7 @@ CREATE TABLE projects (
         ON DELETE CASCADE 
 );
 
-CREATE TABLE employee_projects (
+CREATE TABLE IF NOT EXISTS employee_projects (
     emp_id INT NOT NULL,
     project_id INT NOT NULL,
     PRIMARY KEY (emp_id, project_id),
